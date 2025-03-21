@@ -20,7 +20,7 @@ function maskEmail(email){
   let mask = firstChar + charMask;
 
   //retorna a mascara e o dominio
-  return mask + domain;
+  return mask + lastChar + domain;
 }
 
 // Chama a função 
