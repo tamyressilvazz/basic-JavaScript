@@ -35,7 +35,7 @@ recipes.push(recipe1, recipe2, recipe3);
 
 //faz uma média de ratings
 function getAverageRating(ratings) {
-  const total = ratings[0] + ratings[1] + ratings[2] + ratings[3];
+  const total = ratings.reduce((sum, rating) => sum + rating, 0);
   return total / ratings.length;
 }
 
