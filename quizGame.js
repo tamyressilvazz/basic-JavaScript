@@ -44,7 +44,7 @@ const questions = [
   
   function getResults(question, choice){
     if(question.answer !== choice){
-      return `The computer's choice is wrong. The correct answer is: ${question.answer}`;
+      return `A escolha do computador está errada. A resposta correta é ${question.answer}`;
     }else{
       return "A escolha do computador está correta!";
     }
